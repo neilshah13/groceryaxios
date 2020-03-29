@@ -2,11 +2,15 @@
     <div id="main">
         <div id="chart">
             <axiosExample></axiosExample>
-        
         </div>
          <div id="chart">
             <PSIIndex></PSIIndex>
-        
+        </div>
+        <div id="chart">
+            <covidUS></covidUS>
+        </div>
+        <div id="chart">
+            <travellers></travellers>
         </div>
         
     </div>
@@ -15,10 +19,12 @@
 <script>
 import axiosExample from '../axiosExample.js'
 import PSIIndex from '../PSIIndex.js'
+import covidUS from '../covid.js'
+import travellers from '../travellers.js'
 
 export default {
     components:{
-        axiosExample,PSIIndex
+        axiosExample,PSIIndex,covidUS,travellers,
     }
     
 }
