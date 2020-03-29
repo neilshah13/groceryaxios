@@ -54,7 +54,7 @@ export default{
     methods:{
     
     fetchData : function(){
-        axios.get('http://covid19.soficoop.com/country/us').then(response=>{
+        axios.get('https://covid19.soficoop.com/country/us').then(response=>{
         this.results=response.data.snapshots[response.data.snapshots.length -1]
         console.log(response.data.snapshots[response.data.snapshots.length -1])
         //console.log(this.results)
